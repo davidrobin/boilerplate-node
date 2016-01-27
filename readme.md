@@ -19,9 +19,9 @@
 
 ### Utilisation
 
-* **CSS** : sous syntaxe **SASS** dans le répertoire **/src/scss** avec par défaut le fichier **boilerplate.scss** et le fichier **style.scss**.
+* **CSS** : utilisation recommandée du langage **SASS**, dans le répertoire **/src/scss** avec par défaut le fichier **boilerplate.scss** et le fichier **style.scss**. http://sass-lang.com/guide
 
-* **JavaScript** : dans le répertoire **/src/js**, aucun fichier par défaut.
+* **JavaScript** : dans le répertoire **/src/js**, fichier **script.js** par défaut.
 
 * **Views** : dans le répertoire **/views**, avec par défaut un fichier **home.hbs**, ainsi que **header.hbs** et **footer.hbs** dans le dossier **/views/partials**.
 
