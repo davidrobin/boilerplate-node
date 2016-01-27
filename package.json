@@ -1,0 +1,37 @@
+{
+  "name": "boilerplate-node-js",
+  "version": "0.0.1",
+  "description": "Boilerplate with tiny html5 and css3, powered by NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:css": "mkdir -p dist/css && node-sass src/scss/style.scss dist/css/style.css && postcss --use autoprefixer dist/css/style.css -o dist/css/style.css && cleancss dist/css/style.css -o dist/css/style.min.css",
+    "build:js": "jshint --verbose src/js && mkdir -p dist/js && find . -path './src/js/*.js' -exec cat {} + > dist/js/script.js && uglifyjs dist/js/script.js -mc -o dist/js/script.min.js",
+    "build": "npm run clean && npm run build:js && npm run build:css",
+    "start": "nodemon --watch app.js app.js",
+    "live": "npm run build & npm run start & browser-sync start --reload-delay 500 --proxy localhost:9000  --files 'dist/js/**/*.js, dist/css/**/*.css, views/**/*.hbs, app.js' --no-inject-changes & rerun-script"
+  },
+  "watches": {
+    "build:js": "src/js/**/*.js",
+    "build:css": "src/scss/**/*.scss"
+  },
+  "author": "David ROBIN",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "browser-sync": "^2.10.1",
+    "clean-css": "^3.4.8",
+    "colors": "^1.1.2",
+    "jshint": "^2.8.0",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1",
+    "postcss-cli": "^2.3.3",
+    "rerun-script": "^0.6.0",
+    "uglify-js": "^2.6.1"
+  }
+}

@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.container.full-width {
+  max-width: none;
+}
+
+.no-gutter {
+  padding: 0 !important;
+}
+
+.v-centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+._10, ._20, ._30, ._40, ._50, ._60, ._70, ._80, ._90, ._100 {
+  float: left;
+  padding: 20px;
+  min-height: 100%;
+}
+
+._10 {
+  width: 10%;
+}
+
+._20 {
+  width: 20%;
+}
+
+._30 {
+  width: 30%;
+}
+
+._40 {
+  width: 40%;  
+}
+
+._50 {
+  width: 50%;
+}
+
+._60 {
+  width: 60%;
+}
+
+._70 {
+  width: 70%;
+}
+
+._80 {
+  width: 80%;
+}
+
+._90 {
+  width: 90%;
+}
+
+._100 {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+
+  ._10, ._20, ._30, ._40, ._50, ._60, ._70, ._80, ._90, ._100 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .center-mobile {
+    text-align: center;
+  }
+
+}
