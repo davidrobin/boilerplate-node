@@ -23,6 +23,8 @@
 
 * **JavaScript** : dans le répertoire **/src/js**, fichier **script.js** par défaut.
 
+* **Assets** : dans le répertoire **/src/assets**, positionner les fichiers à copier tels quels (Ex : SVG, WebFonts...). Si besoin, créer ce répertoire.
+
 * **Views** : dans le répertoire **/views**, avec par défaut un fichier **home.hbs**, ainsi que **header.hbs** et **footer.hbs** dans le dossier **/views/partials**.
 
 * **Routes** :
