@@ -17,11 +17,13 @@ body {
 
 main {
   flex: 1 0 auto;
+  padding: 10px;
 }
 
 .container {
   max-width: 1280px;
   width: 100%;
+  height: 100%;
   overflow: auto;
   margin: 0 auto;
 }
@@ -30,20 +32,15 @@ main {
   max-width: none;
 }
 
-.no-gutter {
-  padding: 0 !important;
+.container.auto-width {
+  width: auto;
 }
 
-.v-centering {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-._10, ._20, ._30, ._40, ._50, ._60, ._70, ._80, ._90, ._100 {
+._10, ._20, ._25, ._30, ._33, ._40, ._50, ._60, ._66, ._70, ._75, ._80, ._90, ._100 {
   float: left;
-  padding: 20px;
+  padding: 10px;
   min-height: 100%;
+  word-wrap: break-word;
 }
 
 ._10 {
@@ -54,8 +51,16 @@ main {
   width: 20%;
 }
 
+._25 {
+  width: 25%;
+}
+
 ._30 {
   width: 30%;
+}
+
+._33 {
+  width: 33.33%;
 }
 
 ._40 {
@@ -70,8 +75,16 @@ main {
   width: 60%;
 }
 
+._66 {
+  width: 66.66%;
+}
+
 ._70 {
   width: 70%;
+}
+
+._75 {
+  width: 75%;
 }
 
 ._80 {
@@ -86,8 +99,18 @@ main {
   width: 100%;
 }
 
+.no-gutter {
+  padding: 0 !important;
+}
+
 img {
   max-width: 100%;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .align-left {
