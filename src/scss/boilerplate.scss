@@ -23,7 +23,7 @@ main {
 .container {
   max-width: 1280px;
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: auto;
   margin: 0 auto;
 }
@@ -127,14 +127,20 @@ img {
 
 @media (max-width: 768px) {
 
-  ._10, ._20, ._30, ._40, ._50, ._60, ._70, ._80, ._90, ._100 {
+  ._10.full-width-mobile, ._20.full-width-mobile, ._25.full-width-mobile, ._30.full-width-mobile, ._33.full-width-mobile, ._40.full-width-mobile, ._50.full-width-mobile, ._60.full-width-mobile, ._66.full-width-mobile, ._70.full-width-mobile, ._75.full-width-mobile, ._80.full-width-mobile, ._90.full-width-mobile, ._100.full-width-mobile {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
-  .center-mobile {
-    text-align: center;
+  .centering-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .no-centering-mobile {
+    display: inherit;
+    justify-content: none;
+    align-items: none;
   }
 
 }
